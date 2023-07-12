@@ -46,4 +46,12 @@ function bubbleSort(arr) {
   return arr
 }
 
-console.log(`sorted arr: ${bubbleSort([29, 10, 14, 37, 30, 17])} count: ${count}`)
+console.log(`sorted arr: ${bubbleSort(["p", "n", "a", "r", "e", "c"])} count: ${count}`)
+console.log("a".charCodeAt(0)) // unicode decimal
+
+/**
+ * Worst case time complexity: O(n^2)
+ * Best case time complexity: O(n)
+ * 
+ * Poor performance, used primarily for education
+ */
