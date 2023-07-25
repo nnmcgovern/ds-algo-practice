@@ -1,7 +1,6 @@
 // array is not sorted
 
 function twoNumberSum(array, targetSum) {
-  // Write your code here.
   let table = {}
   const sumArray = []
   for (let i = 0; i < array.length; i++) {
