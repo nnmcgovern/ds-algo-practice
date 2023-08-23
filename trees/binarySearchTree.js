@@ -85,6 +85,9 @@ class BinarySearchTree {
 
     function traverse(node) {
       data.push(node.value);
+
+      if (node.left) traverse(node.left);
+      if (node.right) traverse(node.right);
     }
 
     traverse(this.root);
@@ -102,4 +105,5 @@ tree.insert(8);
 tree.insert(20);
 // console.log(tree);
 // console.log(tree.find(15));
-console.log(tree.BFS());
+// console.log(tree.BFS());
+console.log(tree.preOrderDFS());
