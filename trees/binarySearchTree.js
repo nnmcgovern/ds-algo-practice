@@ -59,15 +59,47 @@ class BinarySearchTree {
 
     return false;
   }
+
+  BFS() {
+    // Breadth-First Search
+    const data = [];
+    const queue = [];
+    let current = this.root;
+
+    queue.push(current);
+
+    while (queue.length) {
+      current = queue.shift(); // remove first element in queue
+      data.push(current.value);
+
+      if (current.left) queue.push(current.left);
+      if (current.right) queue.push(current.right);
+    }
+
+    return data;
+  }
+
+  preOrderDFS() {
+    // Depth-First Search: Pre-Order
+    const data = [];
+
+    function traverse(node) {
+      data.push(node.value);
+    }
+
+    traverse(this.root);
+
+    return data;
+  }
 }
 
 const tree = new BinarySearchTree();
 tree.insert(10);
-tree.insert(5);
-tree.insert(2);
-tree.insert(13);
-tree.insert(7);
-tree.insert(11);
-tree.insert(16);
+tree.insert(6);
+tree.insert(15);
+tree.insert(3);
+tree.insert(8);
+tree.insert(20);
 // console.log(tree);
-console.log(tree.find(11));
+// console.log(tree.find(15));
+console.log(tree.BFS());
