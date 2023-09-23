@@ -4,7 +4,8 @@ CREATE TABLE friends (
   birthday DATE
 );
 
-INSERT INTO friends (id, name, birthday) VALUES (1, "Ororo Munroe", "1940-05-30"),
+INSERT INTO friends (id, name, birthday) VALUES 
+(1, "Ororo Munroe", "1940-05-30"),
 (2, "Other Friend", "2000-01-01"),
 (3, "Me", "1999-07-06");
 
