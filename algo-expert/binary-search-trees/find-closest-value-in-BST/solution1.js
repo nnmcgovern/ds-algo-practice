@@ -24,4 +24,5 @@ class BST {
   }
 }
 
-//
+// Average: Time: O(log(n)), Space: O(log(n)) [callstack]
+// Worst (if tree is one long branch): Time: O(n), Space O(n)
