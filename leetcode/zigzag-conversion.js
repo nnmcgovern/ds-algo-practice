@@ -4,6 +4,8 @@
  * @return {string}
  */
 var convert = function (s, numRows) {
+  if (numRows === 1) return s;
+
   let zigzag = "";
   let inc = false;
   let j = 0;
