@@ -20,3 +20,6 @@ function climbingLeaderboard(ranked, player) {
 
   return ranks;
 }
+
+// Time: O(m * n) where m is the number of player scores
+// and n is the number of ranked scores
