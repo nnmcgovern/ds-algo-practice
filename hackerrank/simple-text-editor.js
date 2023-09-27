@@ -3,7 +3,7 @@ function processData(input) {
   let s = "";
   let strStates = [];
 
-  input = input.split(/\r?\n|\r|\n/g); // split by new lines
+  input = input.split("\n"); // split by new lines
 
   for (let i = 1; i < input.length; i++) {
     let operation = input[i].split(" ");
