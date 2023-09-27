@@ -29,9 +29,6 @@ function processData(input) {
         break;
 
       default:
-        console.log(
-          "?"
-        ); /* console log random string because I don't expect to ever execute default */
     }
   }
 }
