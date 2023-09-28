@@ -1,11 +1,11 @@
-function reverse(node) {
-  if (!node || !node.next) {
-    return node;
+function reverse(llist) {
+  if (!llist || !llist.next) {
+    return llist;
   }
 
-  const newHead = reverse(node.next);
-  node.next.next = node;
-  node.next = null;
+  const newHead = reverse(llist.next);
+  llist.next.next = llist;
+  llist.next = null;
 
   return newHead;
 }
