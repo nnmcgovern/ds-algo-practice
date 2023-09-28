@@ -18,4 +18,4 @@ function reverse(llist) {
   return currentNode;
 }
 
-// Time: O(n) where n is the number of node in the list
+// Time: O(n) where n is the number of nodes in the list
