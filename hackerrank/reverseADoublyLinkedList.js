@@ -4,15 +4,16 @@ function reverse(llist) {
 
   let currentNode = llist;
 
-  while (currentNode) {
+  while (currentNode.next) {
     let oldNext = currentNode.next;
     currentNode.next = currentNode.prev;
     currentNode.prev = oldNext;
-
-    if (oldNext === null) return currentNode;
-
     currentNode = oldNext;
   }
+
+  // currentNode is last node (new head)
+  currentNode.next = currentNode.prev;
+  currentNode.prev = null;
 
   return currentNode;
 }
