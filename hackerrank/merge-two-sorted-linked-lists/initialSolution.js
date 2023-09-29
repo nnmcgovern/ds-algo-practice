@@ -5,7 +5,6 @@ function mergeLists(head1, head2) {
   let currNode1 = head1;
   let currNode2 = head2;
   let newList = null;
-  // let currNew = null;
 
   let data1 = currNode1.data;
   let data2 = currNode2.data;
@@ -56,3 +55,7 @@ function mergeLists(head1, head2) {
 
   return newList;
 }
+
+// Time: O(n + m) where n is the number of nodes in the first
+// linked list and m is the number of nodes in the second
+// Space: O(1)
