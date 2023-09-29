@@ -2,6 +2,13 @@
 
 function insertNodeAtPosition(llist, data, position) {
   // Write your code here
+  if (!llist) {
+    return {
+      data: data,
+      next: null,
+    };
+  }
+
   if (position === 0) {
     return {
       data: data,
