@@ -11,11 +11,11 @@
  * @return {boolean}
  */
 var hasCycle = function (head) {
-  const map = new Map();
+  const set = new Set();
   let curr = head;
 
   while (curr) {
-    if (!map.get(curr)) map.set(curr, 1);
+    if (!set.has(curr)) set.add(curr);
     else return true;
 
     curr = curr.next;
@@ -23,9 +23,6 @@ var hasCycle = function (head) {
 
   return false;
 };
-
-// linked list may contain duplicate values, so entire node must be
-// compared not just value
 
 // Time: O(n)
 // Space: O(n)
