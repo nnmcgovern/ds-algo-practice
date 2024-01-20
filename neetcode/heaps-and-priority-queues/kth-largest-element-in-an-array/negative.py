@@ -1,7 +1,7 @@
 from heapq import *
 
 class Solution:
-    def findKthLargest(self, nums: List[int], k: int) -> int:
+    def findKthLargest(self, nums: list[int], k: int) -> int:
         nums = [-num for num in nums]
 
         heapify(nums)

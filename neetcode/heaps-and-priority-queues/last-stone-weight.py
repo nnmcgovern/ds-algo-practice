@@ -1,7 +1,7 @@
 from heapq import *
 
 class Solution:
-    def lastStoneWeight(self, stones: List[int]) -> int:
+    def lastStoneWeight(self, stones: list[int]) -> int:
         print(stones)
 
         stones = [-stone for stone in stones]

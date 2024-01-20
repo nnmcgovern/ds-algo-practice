@@ -1,7 +1,7 @@
 from heapq import *
 
 class Solution:
-    def kClosest(self, points: List[List[int]], k: int) -> List[List[int]]:
+    def kClosest(self, points: list[list[int]], k: int) -> list[list[int]]:
         result = []
 
         for point in points:
