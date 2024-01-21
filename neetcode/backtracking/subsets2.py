@@ -3,7 +3,7 @@ class Solution:
         result = []
         subset = []
 
-        nums.sort() # avoid duplicates with nums in diff order
+        nums.sort() # places duplicates next to each other
 
         def dfs(i):
             if i >= len(nums):
@@ -14,7 +14,7 @@ class Solution:
             dfs(i + 1)
 
             while i + 1 < len(nums) and nums[i] == nums[i + 1]:
-                i += 1
+                i += 1 # handles duplicates
 
             subset.pop()
             dfs(i + 1)
